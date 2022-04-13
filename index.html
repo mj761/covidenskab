@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--favicon til browser window-->
+  <link rel="shortcut icon" href="ikoner/favi.png">
+
+  <link href="styles/forside_style.css" rel="stylesheet" type="text/css">
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous">
+
+  <title>Covidenskab</title>
+</head>
+
+
+<body>
+  <div id="wrapper">
+
+    <!-- rotterende baggrundsbilleder -->
+    <img class="virus" src="billeder/covid.png" alt="virus covid-19">
+
+    <!-- mini spil sprite icon -->
+    <div class="sprite icon1">
+
+      <a onClick="overlayspil()">
+        <img alt="controller icon" src="ikoner/sortspil_ny.png">
+      </a>
+
+      <a onClick="overlayspil()">
+        <img alt="controller icon" class="img-top" src="ikoner/rodspil_ny.png">
+      </a>
+
+    </div>
+
+    <!-- pop up box minispil -->
+    <div class="modalbox minispil-box">
+      <div class="dialog">
+        <button title="Close" onClick="overlayspil()" class="closebutton">X</button>
+        <div>
+          <div class="container indhold">
+            <h2> Platformspil</h2>
+            <img src="billeder/coronaspil.png" alt="klikhistorie">
+            <p> I denne aktivitet skal du være hurtig på knapperne! Hjælp Alex med at holde afstand til de andre mennesker på
+              sin vej, og sørg for at få samlet håndsprit og ansigtsmasker på vejen. Er du klar til at hoppe højt for at
+              holde afstand? Så start spillet!
+            </p>
+            <a class="btn" href="http://lotte-portfolio.dk/PlatformSpil/index.html">Start</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- pop up box minispildone -->
+    <div class="sprite icon2">
+
+      <a href="historie.html">
+        <img alt="klik quiz icon" src="ikoner/sortklikh_ny.png">
+      </a>
+
+      <a onClick="overlay()">
+        <img alt="klik quiz icon" class="img-top" src="ikoner/rodklikh_ny.png">
+      </a>
+
+    </div>
+
+    <!-- pop up historie box  -->
+    <div class="modalbox historie-box">
+      <div class="dialog">
+        <button title="Close" onClick="overlay()" class="closebutton">X</button>
+        <div>
+          <div class="container indhold">
+            <h2> Historie tid</h2>
+            <img src="billeder/klikhistorie.png" alt="klikhistorie">
+            <P> I denne aktivitet skal du træffe nogle svære beslutninger for at undgå smittespredning. Du følger Alex igennem
+              sin dag, hvor du skal hjælpe med at vælge hvad der skal ske i historien. Sørg for at tage de fornuftigste og
+              sikre valg!</P>
+            <a class="btn" href="klikhistorie.html">Start</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- quiz sprite -->
+    <div class="sprite icon3">
+
+      <a onClick="overlayquiz()">
+        <img src="ikoner/quizblack.png" alt="quiz icon">
+      </a>
+
+      <a onClick="overlayquiz()">
+        <img alt="quiz icon" class="img-top" src="ikoner/rodquiz_ny.png">
+      </a>
+
+    </div>
+
+    <!-- pop up box quiz -->
+    <div class="modalbox quiz-box">
+      <div class="dialog">
+        <button title="Close" onClick="overlayquiz()" class="closebutton">X</button>
+        <div>
+          <div class="container indhold">
+            <h2> Videoquizzen</h2>
+            <img src="billeder/videospil.png" alt="klikhistorie">
+            <P> I denne aktivitet skal du teste dig selv, og se om du ved mere om corona-virussen end Johan gør. Han har lidt
+              svært ved at forstå det, så han stiller nogle spørgsmål, hvor du skal give dit bedste bud på et svar . Start
+              aktiviteten og test din viden!</P>
+            <a class="btn" href="videoquiz.html">Tag Quiz</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- info icon -->
+    <div class="sprite icon4">
+
+      <a href="thecrew.html">
+        <img src="ikoner/sortinfo_ny.png" alt="info">
+      </a>
+
+      <a href="thecrew.html">
+        <img alt="quiz icon" class="img-top" src="ikoner/rodinfo_ny.png">
+      </a>
+
+    </div>
+
+    <div class="header">
+      <h1>COVIDENSKAB</h1>
+    </div>
+
+    <div class="undertitel">
+      <h6>Learn by doing - Covid-19</h6>
+    </div>
+    <div class="kontakt">
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+
+    <!-- alex maskot billede -->
+    <img src="billeder/header_img.png" class="maskot" alt="dreng med bog">
+
+    <!-- tale boblen -->
+    <img src="billeder/fcf0a50709e283336ca69100eb79d738.png" class="taleboble" alt="dreng med bog">
+
+  </div>
+
+  <script src="script/script.js "></script>
+
+
+  <!--end wrapper -->
+</body>
+
+</html>

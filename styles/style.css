@@ -1,0 +1,280 @@
+/*---- contact form ---*/
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+  /*validerings beskeder, defination af farve*/
+    #msg0,#msg1, #msg2, #msg3, #msg4, #msg5 {
+        color:#e73c7e;
+        background-color: rgba(255, 255, 255, 0.301);
+    }
+    /*Body og wrapper, baggrund **/
+    body{
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+    }
+    #wrapper { 
+        background: url(billeder/Baggrund.png) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        z-index: 2;
+        position: relative;
+      }
+      #success-message {
+        opacity: 0;
+      }
+      /* video side style */
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+  #videowrapper {
+      background-color:#000;
+  }
+
+  #videowrapper{
+    width: 100vw;
+    height: 110vh;
+    margin: 0 auto;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  #quiz-container {
+      align-items: center;
+  }
+  
+  .video-slider {
+      margin: 0 auto;
+      width: 60vw;
+      height: 60vh;
+      background: rgb(0, 0, 0);
+      position: relative;
+      overflow: hidden;
+  }
+  .slide {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      overflow: hidden;
+  }
+  
+  .slide:first-child{
+      left: 0;
+  }
+  .video{
+      height: 120%;
+      width: 100%;
+      border: 10%;
+  }
+  
+  .slide-arrow{
+      cursor: pointer;
+      opacity: 1;
+  }
+  .slide-arrow:hover{
+      opacity: .2;
+  }
+  .slideshow-container {
+      background-color: rgb(235, 234, 234);
+      text-align: center;
+      padding: 1%;
+      width: 60vw;
+      margin: 0 auto;
+      border-radius: 7px;
+      margin-top: 1vh;
+      
+  }
+  .slideshow-container h3{
+      color: black;
+      font-family: 'Oswald', sans-serif;
+      font-weight: bold;
+      font-size: 1.7rem;
+  }
+  .mySlides h4 {
+     font-family: 'Open Sans', sans-serif;
+     font-weight: lighter;
+      margin: 2% 0;
+      color: black;
+  
+  }
+
+   /*form overskrift*/
+    h4{
+        color: #fff;
+    }
+    /*form styling*/
+    .col-xs-12.col-sm-12.col-md-12.col-lg-12 {
+      padding: 0 20% 0 20%;
+    }
+    form{
+        margin-bottom: 5em;
+    }
+    .margin-top-25 {
+      margin-top: 25px;
+    }
+    
+    .form-title {
+      padding: 2px;
+      font-size: 5em;
+      color:#ffffff;
+      font-family: 'Oswald', sans-serif;
+    }
+   .checkbox{
+       float: left;
+       display: block;
+   }
+    
+    .form-group .form-control {
+      border-bottom: 1px;
+      border-style: solid;
+      border-radius:15; 
+      border-color: rgb(255, 255, 255);
+      resize: none;
+    }
+    input#cvr.form-control , input#dato.form-control{
+        width: 155px;
+        border-style: solid; 
+        margin: 30px 0px 0px 15px;
+    }
+    input#penge.form-control {
+        width: 300px;
+        padding: 40px;
+        font-size: 1.5em;
+        
+    }
+    
+    .form-group .form-control:focus {
+        box-shadow: none;
+      border-width: 0 0 2px 0;
+      border-color: #000;
+      
+    }
+    
+    textarea {
+      resize: none;
+    }
+    /* button "send besked" style*/
+    .btn-mod.btn-large {
+        height: auto;
+        padding: 13px 52px;
+        font-size: 15px;
+    }
+    
+    .btn-mod.btn-border {
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        background: transparent;
+        border-radius: 30px;
+    }
+    
+    .btn-mod, a.btn-mod {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 4px 13px;
+        color: #fff;
+        background: rgba(34,34,34, .9);
+        border: 1px solid transparent;
+        font-size: 11px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 15px;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        -webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+        -moz-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+        -o-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+        -ms-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+        transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    }
+    
+    .btn-mod.btn-border:hover, .btn-mod.btn-border:active, .btn-mod.btn-border:focus, .btn-mod.btn-border:active:focus {
+        color: #fff;
+        border-color: #ea5255;
+        background: #23a5d500;
+        color: #ea5255;
+        outline: none;
+    }
+    
+    
+    @media only screen and (max-width: 500px) {
+        .btn-mod.btn-large {
+           padding: 6px 16px;
+           font-size: 11px;
+        }
+      
+        .form-title {
+            font-size: 20px;
+      }
+    }
+
+    .text-center i{
+      color: #ffffff;
+    }
+
+/*button forside*/
+ .kontakt .mielotbut{
+  margin-right: 90px;
+}
+.kontakt .davjobut{
+ margin-left: 90px;
+}
+
+ .kontakt a:link, .kontakt a:visited, .menu a:link, .menu a:visited {
+   font-size: 1rem;
+   color: white;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+
+}
+
+.kontakt a:link, .kontakt a:visited{
+   border: solid 2px white;
+   border-radius: 15px;
+   padding: 1px 15px;
+ }
+ 
+.kontakt a:hover, .kontakt a:active, .menu a:hover, .menu a:active{
+   color: #ea5255;
+  
+ }
+
+ .kontakt a:hover, .kontakt a:active{
+   color: #ea5255;
+   border: solid 2px #ea5255;
+ }
+ .forside{
+   padding: 15px;
+   margin-left: 75px;
+   font-family: 'Open Sans', sans-serif;
+ }

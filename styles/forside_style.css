@@ -1,0 +1,350 @@
+
+/* stopper scrool */
+html, body {margin: 0; height: 100vh; overflow: hidden}
+/* body med skiftende farver */
+body{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    overflow: hidden;
+}
+/* fungere som body brugt til baggrunds billede */
+#wrapper { 
+    background: url(../billeder/Baggrund.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    position: relative;
+  }
+
+#baggrund{
+      position: relative;
+      height: 100vh;
+}
+.kontakt a{
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h6{
+    font-family: 'Oswald', sans-serif;
+}
+
+.header h1{
+    font-size: 3.5vw;
+}
+
+/* forside postion elemeter */
+
+.taleboble{
+    position: absolute;
+    top: 65%;
+    right: 9%;
+    z-index: 100;
+}
+
+.taleboble {
+    width: 10%;
+    height: auto;
+} 
+
+.maskot{
+    position: absolute;
+    top: 81%;
+    right: 2%;
+    z-index: 100;  
+}
+
+.maskot {
+    width: 10%;
+    height: auto;
+}
+
+.undertitel{
+    font-size: 1vw;
+    position: absolute;
+    top: 96%;
+    right: 47.5%;
+    z-index: -11;
+    text-align: center;
+    color: white; 
+}
+
+.kontakt{
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    z-index: 100;
+}
+
+.virus{
+    position: absolute;
+    z-index: -2;
+    left: 31.2%;
+    top:32%;
+    animation: spin 280s ease infinite;
+}
+
+.virus {
+    width: 33%;
+    height: auto;
+}
+
+.header{ 
+    position: absolute;
+    color:white;
+    left: 38.2%;
+    top:61.5%;
+    z-index: -2;
+    text-align: center;
+}
+
+/* kontakt knap */
+
+
+.kontakt a:link, .kontakt a:visited, .menu a:link, .menu a:visited {
+    font-size: 2.3vh;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+ .kontakt a:link, .kontakt a:visited{
+    border: solid 2px white;
+    border-radius: 15px;
+    padding: 1px 15px;
+  }
+  
+.kontakt a:hover, .kontakt a:active, .menu a:hover, .menu a:active{
+    color: #ea5255;  
+  }
+
+  .kontakt a:hover, .kontakt a:active{
+    color: #ea5255;
+    border: solid 2px #ea5255;
+  }
+
+  /* kontakt knap done */
+
+  /* sprites (ikoner der skifter når man hover) */
+
+.sprite img{
+    width: 9%;
+    height: auto;
+    position: absolute;
+  }
+.icon1{
+    top: 18%;
+    left: 32%;
+  }
+.icon2{
+    top: 15%;
+    left: 55.5%;
+}
+.icon3{
+    top: 62%;
+    left: 21.5%;
+}
+.icon4{
+    top:62%;
+    left:66%;
+}
+.sprite {
+    position: relative;
+    z-index: 3;
+}
+.sprite .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.sprite:hover .img-top {
+    display: inline;
+    animation: grow 0.8s ease;
+}
+
+/* sprites done */
+
+
+
+.maskot, .taleboble{
+    animation: opacity 10s  ease-out;
+}
+
+/* keyframes til animations */
+
+@keyframes opacity {
+    0% {
+        display: none;
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    1% {
+        display: block;
+    }
+    50%{
+        transform: translateY(20%);
+        opacity: 0;
+        display: block;
+    }
+
+    100% {
+        transform: translateY(0%);
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes grow {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes slide{
+	0% {
+        transform: translateY(100%);
+        overflow: hidden;
+    }
+	100% {
+        transform: translateY(0%);
+        overflow: hidden;
+	}
+}
+
+
+
+/* popup boxe */
+.container-overlay{
+    float:none;
+    margin:auto;
+    text-align:center
+  }
+
+  .container>.overly{
+    width:100%;
+    height:80px;
+    font-size:25px;
+    cursor:pointer
+  }
+
+  .dialog{
+    animation: slide 1s ease ;
+  }
+
+  .modalbox {
+      min-width: 100%;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(81, 51, 51, 0.5);
+      z-index: 99999;
+      pointer-events: auto;
+      display:none;
+      overflow-y:auto;
+  }
+  .modalbox >.dialog {
+      max-width: 50vw;
+      position: relative;
+      top: 0%;
+      left:13%;
+      margin: 5% 10%;
+      padding: 5px 20px 13px 20px;
+      border-radius: 10px;
+      background: #ffffff;
+      box-shadow: 0 0 10px #000000;
+      display: block;
+      pointer-events: auto;
+  }
+  
+  .closebutton {
+      float: right;
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 1;
+      color: #000;
+      text-shadow: 0 1px 0 #fff;
+      filter: alpha(opacity=20);
+      opacity: .6;
+      z-index: 9999;
+    cursor:pointer;
+  }
+
+.historie-box h2, .minispil-box h2 , .quiz-box h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 5vh;
+    margin-top: 7%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    display:block;  
+}
+
+.historie-box p, .minispil-box p, .quiz-box p{
+    margin: 2% 9% 2% 10%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* popup box knap */
+.historie-box a, .minispil-box a, .quiz-box a{
+    font-family: 'Oswald', sans-serif;
+    font-size: 6vh;;
+    display: block;
+    width: 15vw;
+    height: 8vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    text-align: center;
+    padding-bottom: 10%;
+    border:solid 2px #333;
+    border-radius: 15px;
+    color: #000;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+.historie-box a:hover, .minispil-box a:hover, .quiz-box a:hover{
+color: #fff;
+box-shadow: 6px 7px 5px 1px rgba(0,0,0,0.75);
+}
+/* popup box knap done */
+.historie-box img, .minispil-box img, .quiz-box img{
+    width: 80%;
+    height: auto;
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+}
+

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="ikoner/favi.png">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kontakt</title>
+</head>
+
+
+<body>
+
+
+    <div id="wrapper">
+        <div class="kontakt forside">
+            <a href="index.html">Forside</a>
+        </div>
+
+        <div class="cointainer">
+
+            <!--form title indenfor container-->
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <h2 class="form-title">KONTAKT OS HER</h2>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <!-- validateForm() tilknyttet selve form tag, funktionen køres igennem når der klikkes på button-->
+                    <form id="contact-form" name="myForm" class="form" action="#" onsubmit="return validateForm()">
+
+                        <div class="form-group">
+
+
+
+                        </div>
+                        <!--email label, input-->
+                        <div class="form-group">
+                            <label class="form-label" id="emailLabel" for="email"></label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email adresse" tabindex="2">
+                            <!--valider besked-->
+                            <p id="msg1"></p>
+                        </div>
+
+                        <!--navn label, input-->
+                        <div class="form-group">
+                            <label class="form-label" id="nameLabel" for="name"></label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Navn" tabindex="1">
+                            <p id="msg2"></p>
+                        </div>
+
+                        <!--emne label, input-->
+                        <div class="form-group">
+                            <label class="form-label" id="kortLabel" for="kort"></label>
+                            <input type="text" maxlength="16" class="form-control" id="kort" name="kort" placeholder="Emne">
+                            <!--valider besked-->
+                            <p id="msg3"></p>
+                        </div>
+
+
+
+
+                        <!--besked label, input-->
+                        <div class="form-group">
+                            <label class="form-label" id="messageLabel" for="message"></label>
+                            <textarea rows="6" cols="60" name="message" class="form-control" id="message" placeholder="Skriv din besked her..." tabindex="4"></textarea>
+                            <!--valider besked-->
+                            <p id="msg4"></p>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="nyhedsbrev" value="nyhedsbrev">
+                            <label>Tilmeld dig nyhedsbrevet</label>
+                            <br>
+                        </div>
+                        <div class="text-center margin-top-25 ">
+
+                            <!--submit button-->
+                            <button type="submit" id="submit" class="btn btn-mod btn-border btn-large">Send besked</button>
+
+                        </div>
+
+                    </form>
+
+                    <!-- End form -->
+
+                </div>
+                <!-- End col -->
+
+            </div>
+            <!-- End row -->
+
+
+
+
+
+            <footer id="footer" class="d-flex-column text-center">
+                <hr class="mt-0">
+                <!--Social buttons-->
+                <div class="text-center">
+
+                    <h4>SOCIAL</h4>
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/LotteAugusta" class="sbtn btn-large mx-1" title="Facebook">
+                                <i class="fab fa-facebook-square fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/lotte-kildebro-5585ba14b/" class="sbtn btn-large mx-1" title="Linkedin">
+                                <i class="fab fa-linkedin fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/LotteAugusta" class="sbtn btn-large mx-1" title="Twitter">
+                                <i class="fab fa-twitter-square fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.youtube.com/channel/UC0Y0B5e8EJqhctfxCrY5LDA?view_as=subscriber" class="sbtn btn-large mx-1" title="Youtube ">
+                                <i class="fab fa-youtube-square fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.Social buttons-->
+            </footer>
+        </div>
+        <!---end of container -->
+    </div>
+
+    <!---end of wrapper -->
+
+    <script src="script/validering.js "></script>
+</body>
+
+</html>
